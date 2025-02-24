@@ -10,7 +10,7 @@ import java.util.Collection;
 import java.util.List;
 import java.util.Objects;
 
-public record UserRegisterRequest(
+public record UserRegistrationRequest(
         @Size(min=4,max = 20,message = "El username debe tener mínimo 4 caracteres y máximo 20")
         @NotBlank(message = "El username es obligatorio")
         String username,
@@ -23,7 +23,7 @@ public record UserRegisterRequest(
         Collection<Rol> roles
         ) {
 
-    public UserRegisterRequest {
+    public UserRegistrationRequest {
         roles = Objects.requireNonNullElse(roles, List.of(Rol.USER));
     }
 }
