@@ -1,7 +1,6 @@
 package co.edu.uniquindio.ingesis.restfull.resources;
 
 import co.edu.uniquindio.ingesis.restfull.dtos.UserRegistrationRequest;
-import co.edu.uniquindio.ingesis.restfull.dtos.UserResponse;
 import co.edu.uniquindio.ingesis.restfull.services.UserService;
 import jakarta.validation.Valid;
 import jakarta.ws.rs.Consumes;
@@ -11,8 +10,6 @@ import jakarta.ws.rs.Produces;
 import jakarta.ws.rs.core.MediaType;
 import jakarta.ws.rs.core.Response;
 import lombok.RequiredArgsConstructor;
-
-import java.util.UUID;
 
 @Path("/users")
 @Produces(MediaType.APPLICATION_JSON)
