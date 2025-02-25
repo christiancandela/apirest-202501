@@ -15,7 +15,7 @@ public record UserRegistrationRequest(
         @NotBlank(message = "El username es obligatorio")
         String username,
         @NotBlank
-        @Pattern(regexp = "^(?=.*\\\\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$")
+        @Pattern(regexp = "^(?=.*\\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$")
         String password,
         @NotBlank
         @Email
